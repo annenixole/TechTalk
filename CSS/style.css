@@ -1,0 +1,306 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+nav { /*buong nav */   
+  background: white;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  cursor: pointer;
+  border-top: 5px solid #94279c;
+ 
+}
+
+ nav ul { /* nav bar */     
+  position: static;
+  flex: 1;
+  padding-top:1%;
+  text-align: center;
+  margin-top: -40px;
+  padding-bottom:2%;
+  
+  
+}
+
+nav ul li { /* nav bar txt */
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: static;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav ul li a{ /* txt styling color&font */
+  color: black;
+}
+
+/* dinadag para sa hover */
+nav ul li a.active,a:hover {
+ color: #94279c;
+ transition: 0.2s; /*transition time*/
+}
+
+nav img{ /*nav bar logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  
+}
+
+
+#section1cont {
+  height:550px;
+  width:100%; 
+  background-color: #191919;
+  
+}
+
+#section1header{
+  top: -80%; 
+  left: 75%;
+	width:40%;
+  font-size: 78px;
+  word-spacing:-45px;
+  font-family: 'Righteous', cursive;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+#section1subhead{
+  top: -88%; 
+  left: 76%;
+  color: white;
+  width:40%;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+#section1body{
+  color: white;
+  width:30%; /* padding paragraph */
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  top:-60%;
+  left: 71%;
+  text-align: justify;
+  transform: translate(-50%, -50%);
+}
+
+#section2cont {
+  height: 500px;
+  background-color: #191919;
+}
+
+#section2cont img{
+  width: 100%;
+  height:100%;
+} 
+
+#section2cont h1{
+  color: white;
+  position: relative;
+  top: -80%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+#section2cont p{
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: -75%;
+  left:35%;
+  text-align: center;
+  width:30%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#section2cont button{
+  background-color: transparent;
+  border: 2px solid black;
+  border-color: white;
+  color: white;
+  position:relative;
+  top: -70%;
+  left:46%;
+  line-height: 48px;
+  border-radius: 48px;
+  height: 50px;
+  width: 125px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#section2cont button:hover{
+ background: white;
+ color:black;
+ opacity: .7;
+}
+
+#section3cont {
+  height: 500px;
+  background-color: #191919;
+}
+
+#section3cont img{
+  width: 100%;
+  height:100%;
+}
+
+#section3cont h1{
+  color: white;
+  position: relative;
+  top: -80%;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 34px;
+}
+
+#section3cont p{
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: -75%;
+  left:31%;
+  text-align: center;
+  width:37%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#section3cont button{
+  background-color: transparent;
+  border: 2px solid black;
+  border-color: white;
+  color: white;
+  position:relative;
+  top: -70%;
+  left:46%;
+  line-height: 48px;
+  border-radius: 48px;
+  height: 50px;
+  width: 125px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#section3cont button:hover{
+ background: white;
+ color:black;
+ opacity: .7;
+}
+
+/* scroll to top button */
+    #progress {
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px; 
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+/* eto yung progress makikita dito kung malapit naba sa dulo */
+    #progress-value {
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #94279c;
+    }
+
+/* footer */
+
+footer {
+  background:black ;
+  height:auto;
+  color: white;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-content p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.navfooter{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13px;
+}
+
+.navfooter li{
+  margin: 5px;
+  border-right: 1px white solid;
+  padding: 0 10px;
+  float: left;
+}
+
+.navfooter a{
+  color:white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.navfooter a:hover{
+ color: #94279c;
+ transition: 0.2s; /*transition time*/
+}
+
+.navfooter li:last-child {
+  border-right: none;
+}
+
+.footer-top{
+  background: #94279c;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-bottom{
+  background: #94279c;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+   color: #00C2FF;
+}

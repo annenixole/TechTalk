@@ -1,0 +1,275 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+nav { /*buong nav */   
+  background: white;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  cursor: pointer;
+  border-top: 5px solid #94279c;
+ 
+}
+
+ nav ul { /* nav bar */     
+  position: static;
+  flex: 1;
+  padding-top:1%;
+  text-align: center;
+  margin-top: -40px;
+  padding-bottom:2%;
+  
+  
+}
+
+nav ul li { /* nav bar txt */
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: static;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav ul li a{ /* txt styling color&font */
+  color: black;
+}
+
+/* dinadag para sa hover */
+nav ul li a.active,a:hover {
+ color: #94279c;
+ transition: 0.2s; /*transition time*/
+}
+
+nav img{ /*nav bar logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  
+}
+
+.univ-heading img{
+  margin-top: -130px;
+}
+
+.univ-heading h3{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  font-size: 50px;
+  top: 90%;
+  left: 50%;
+  font-family: 'Righteous', cursive;
+}
+
+.univ-heading p{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  top: 95%;
+  left: 50%;
+  font-family: 'Inter', sans-serif;
+  color:#00CF;
+}
+
+
+#univ{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.univ-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: -150px 0px;
+  flex-wrap: wrap;
+  
+}
+
+.univ{
+  width: 350px;
+  background-color: white;
+  border: 1px solid #ececec;
+  margin:20px;
+  box-shadow: 0 11px 10px 0 rgba(0,0,0,0.24),0 14px 30px 0 rgba(0,0,0,0.19);
+}
+.univ-img{
+  width: 100%;
+  height:auto;
+}
+.univ-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.univ-txt{
+  padding: 15px;
+  display:flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+.univ-txt i{
+  margin: 3px;
+}
+
+#univ-btn {
+  margin-top: 17px;
+  margin-left: 30%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  justify-content: center;
+  line-height: 5px;
+  height: 48px;
+  width: 125px;
+  border-color: black;
+  transition-duration: 0.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#univ-btn{ /*button hover*/
+ background-color: transparent;
+ color: black;
+ 
+}
+
+#univ-btn a{ /*button font color*/
+  color: black;
+}
+
+#univ-btn a:hover{ /*button font color hover*/
+  color: black;
+}
+
+#univ-btn:hover {
+ background: black;
+ color:white;
+ opacity: .7;
+
+}
+
+/* scroll to top button */
+    #progress {
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px; 
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+/* eto yung progress makikita dito kung malapit naba sa dulo */
+    #progress-value {
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: black;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #94279c;
+    }
+
+/* footer */
+
+footer {
+  background:black ;
+  height:auto;
+  color: white;
+  margin-top: 25%;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer-content p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.navfooter{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13px;
+}
+
+.navfooter li{
+  margin: 5px;
+  border-right: 1px white solid;
+  padding: 0 10px;
+  float: left;
+}
+
+.navfooter a{
+  color:white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.navfooter a:hover{
+ color: #94279c;
+ transition: 0.2s; /*transition time*/
+}
+
+.navfooter li:last-child {
+  border-right: none;
+}
+
+.footer-top{
+  background: #94279c;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-bottom{
+  background: #94279c;
+  padding: 8px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+   color: #00C2FF;
+}
+
+

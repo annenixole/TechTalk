@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"> <!-- important -->
+  <meta name="viewport" content="width=device-width"> <!-- important -->
+  <link href="CSS/style.css" rel="stylesheet" /> <!-- important -->
+  <link rel="shortcut icon" href="IMAGES/logo.png" type="image/gif" />
+  <!--tab icon-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <!--fonts-->
+  <title>TechTalk</title>
+</head>
+
+<body>
+
+  <!--nav bar -->
+  <nav>
+    <img src="IMAGES/techtalk black.png" height="120px" alt="logo">
+
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="ICT courses.html">ICT Courses</a></li>
+      <li><a href="universities.html">Universities</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <!--nav bar -->
+
+  <div class="container">
+    <div id="section1cont">
+      <video src="IMAGES/VIDS/intro vid.mp4" autoplay="" muted="" loop="" width="750"></video>
+
+      <p id="section1header">
+        <span style="color:#A100ED">T</span>
+        <span style="color:#00C2FF">e</span>
+        <span style="color:#8C00ED">c</span>
+        <span style="color:#0030FF">h</span>
+        <span style="color:#00C2FF">T</span>
+        <span style="color:#8C00ED">a</span>
+        <span style="color:#0030FF">l</span>
+        <span style="color:#00C2FF">k</span>
+      </p>
+      <p id="section1subhead"> Talking About ICT courses to take in College</p>
+      <p id="section1body"> A website dedicated to assisting students in making the best decisions possible about taking
+        ICT courses in college. We provide comprehensive information on the top ICT courses available and the career
+        opportunities that each one can lead to. <br></br> Our TechTalk team created this website to help and guide you
+        through the process, from researching and selecting the best course to enrolling in it and succeeding in it. It
+        has the information you need to make informed decisions about your college ICT course. We'll help you understand
+        the concepts, learn the tools, and develop the skills to make you a successful IT professional. <br></br> With
+        TechTalk, you can be sure you’re making the right decision when it comes to your college ICT course. </p>
+
+    </div>
+
+    <div id="section2cont">
+      <img src="IMAGES/section2image.png">
+      <h1> Welcome To Our Site </h1>
+      <p>Expand your understanding about information and communication technology through articles and interview with an
+        IT professional, allowing you to gain valuable insights and tips on how to succeed in your chosen field. </p>
+
+      <!--didirect sa about us ung 'a href'-->
+     <a href="explore.html"> <button id="explorepage"> Explore </button>  </a>
+        
+    </div>
+  </div>
+
+    <div id="section3cont">
+    <img src="IMAGES/section3image.png">
+    <h1> Discover Courses </h1>
+    <p> Technology has created a variety of new jobs and courses for students to explore and with the growth of the
+      internet and the availability of digital tools, students can now choose and pursue careers in various ICT fields.
+      TechTalk
+      will help you find the best course for your skills and interests from the hundreds of courses offered in the ICT
+      field.</p>
+
+    <!--didirect sa explore ung 'a href'-->
+    <a href="ICT courses.html"> <button id="coursespage"> ICT Courses </button> </a>
+
+  </div>
+</div>
+
+  <!--   scroll to top button -->
+  <div id ="progress">
+	<span id="progress-value"> &#x1F815; </span>
+    </div>
+
+    <!-------------------------------scroll to top button------------------------------>
+  <script>
+let calcScrollValue = () => {
+	let scrollProgress = document.getElementById("progress");
+    
+    let progressValue = document.getElementById("progress-value");
+    
+    let pos = document.documentElement.scrollTop;
+    
+    let calcHeight = 
+    	document.documentElement.scrollHeight-
+        document.documentElement.clientHeight;
+        
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+   
+   if (pos>100) {
+   	scrollProgress.style.display="grid";
+   } else {
+   	scrollProgress.style.display="none";
+   }
+   
+   scrollProgress.addEventListener("click", () => {
+   	document.documentElement.scrollTop = 0;
+   });
+   
+   scrollProgress.style.background = `conic-gradient(#94279c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+  </script>
+
+  <!--footer-->
+  <footer>
+     <div class="footer-top">
+    </div>
+    
+    <div class="footer-content">
+      <img src="IMAGES/techtalk colorful.png" height="100px">
+      <p>Discover the Right ICT Course for You - Unlocking Your Education Potential!</p>
+
+      <ul class="navfooter">
+      <li><a href="#">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="ICT courses.html">ICT Courses</a></li>
+      <li><a href="universities.html">Universities</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+   </div>
+
+    <div class="footer-bottom">
+       <p> © 2023 TechTalk. All rights reserved. Made by <span>hightech team</span></p>
+    </div> 
+   
+  </footer>
+
+
+</body>
+
+</html>
